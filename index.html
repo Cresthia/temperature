@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <div class="box-pos">
+        <div class="box">
+            <div class="search">
+                <div class="lat-pos">
+                    <div class="lat-pad">
+                        <input id="lat" class="lat" placeholder="Latitude"></input>
+                    </div>
+                </div>
+                <div class="lon-pos">
+                    <input id="lon" class="lon" placeholder="Longtitude"></input>
+                </div>
+                <div class="display-pos">
+                    <p id="display" class="display"></p>
+                </div>
+            </div>
+            <div class="btn-pos">
+                <div class="submit">
+                    <button class="sub-btn"onclick="fetchData();">Search</button>
+                </div>
+                <div class="fahren">
+                    <button class="fah-btn"onclick="convert();">Fahrenheit</button>
+                </div>
+                <div class="celsius">
+                    <button class="cel-btn"onclick="celsius();">Celsius</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
